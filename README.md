@@ -1,4 +1,4 @@
-# GuanYu Coin
+# ZhaoYun Coin
 
 BSC / Solidity
 
