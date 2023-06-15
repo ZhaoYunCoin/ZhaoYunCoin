@@ -1,0 +1,21 @@
+{
+  "main": "./contracts/ZhaoYunCoin.sol",
+  "deploy": "./build/contracts/ZhaoYunCoin.json",
+  "framework": "truffle",
+  "npmClient": "npm",
+  "compilers": {
+    "solc": "0.8.6",
+    "truffle": "v5.4.3",
+    "evmVersion": "istanbul",
+    "optimizer": {
+      "enabled": true,
+      "runs": 200
+    }
+  },
+  "linter": "solhint",
+  "editor": {
+    "fontFamily": "Hack",
+    "fontSize": "16px",
+    "ligatures": false
+  }
+}

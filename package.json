@@ -1,0 +1,23 @@
+{
+  "name": "ZhaoYunCoin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "testrpc": "ganache-cli --gasLimit 13000000 -e 100000 --networkId 777",
+    "truffle": "truffle",
+    "truffle:test": "truffle test",
+    "build": "truffle compile",
+    "deploy": "truffle deploy",
+    "lint": "npm run lint:sol && npm run lint:js",
+    "lint:js": "eslint test/**/*.js",
+    "lint:sol:fix": "solium -d contracts/ --fix",
+    "lint:sol": "solium -d contracts/",
+    "flatten": "truffle-flattener contracts/BEP20TokenFactory.sol > contracts/flattened/BEP20TokenFactory.sol && truffle-flattener contracts/Main.sol > contracts/flattened/Main.sol && truffle-flattener contracts/MainV1.sol > contracts/flattened/MainV1.sol && truffle-flattener contracts/BEP20UpgradeableProxy.sol > contracts/flattened/BEP20UpgradeableProxy.sol"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+
+  }
+}
